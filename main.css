@@ -1,0 +1,366 @@
+main {
+    height: 5px;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07); */
+}
+
+
+.body-main-container {
+    /* position: relative; */
+    /* width: 1425px; */
+    width: 100%;
+    /* height: 3392px; */
+    margin: 0 auto;
+}
+
+.body-main-container .flyer-one,
+.flyer-two,
+.flyer-three,
+.flyer-four {
+    display: flex;
+    /* width: 1425px; */
+    width: 100%;
+    height: 621.48px;
+    /* height: 618.48px; */
+    margin: 32px 0;
+}
+
+.body-main-container .flyer-one .text-1,
+.image-1,
+.flyer-two .image-2,
+.text-2,
+.flyer-three .text-3,
+.image-3,
+.flyer-four .image-4,
+.text-4 {
+    height: 100%;
+    /* width: 712.5px; */
+    width: 50%;
+}
+
+.body-main-container .flyer-one .text-1,
+.flyer-two .text-2,
+.flyer-three .text-3,
+.flyer-four .text-4 {
+    /* background-color: #eb81a5; */
+    /* width: 616.500px; */
+    width: 50%;
+    height: 621.484px;
+    /* padding: 32px 48px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-main-container .flyer-one .text-1 button,
+.flyer-two .text-2 button,
+.flyer-three .text-3 button,
+.flyer-four .text-4 button {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration-line: none;
+    font-size: 16px;
+}
+
+.body-main-container .flyer-one .text-1 button:hover,
+.body-main-container .flyer-two .text-2 button:hover,
+.body-main-container .flyer-three .text-3 button:hover,
+.body-main-container .flyer-four .text-4 button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.118);
+}
+
+.body-main-container .flyer-one .text-1 {
+    background-color: rgb(235, 129, 165);
+    margin-bottom: 24px;
+}
+
+.body-main-container .flyer-one .text-1 h1,
+.body-main-container.flyer-one span {
+    color: #1e3932;
+    font-size: 50px;
+    letter-spacing: 2px;
+    width: 511.688px;
+    height: 120px;
+    text-align: center;
+}
+
+.body-main-container .flyer-one .text-1 #intro {
+    width: 511.688px;
+    /* max-width: calc(1em * (calc(600 / 13))); */
+    height: 144px;
+    color: #1e3932;
+    font-size: 25px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: 400px;
+}
+
+.body-main-container .flyer-one .text-1 button {
+    color: rgb(30, 57, 50);
+    border-color: rgb(30, 57, 50);
+    background-color: rgb(235, 129, 165);
+}
+
+.body-main-container .flyer-one .image-1 img,
+.body-main-container .flyer-two .image-2 img,
+.body-main-container .flyer-three .image-3 img,
+.body-main-container .flyer-four .image-4 img {
+    height: 100%;
+    width: 100%;
+}
+
+.body-main-container .flyer-two .text-2 {
+    background-color: rgb(0, 98, 65);
+    color: #ffffff;
+    text-align: center;
+}
+
+.body-main-container .flyer-two .text-2 h2 {
+    width: 472.75px;
+    height: 120px;
+}
+
+.body-main-container .flyer-two .text-2 h2 span {
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.body-main-container .flyer-two .text-2 span {
+    width: 506.67px;
+    height: 72px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.body-main-container .flyer-two .text-2 button {
+    background-color: rgb(0, 98, 65);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.body-main-container .flyer-three .text-3 {
+    background-color: rgb(143, 139, 244);
+}
+
+.body-main-container .flyer-three .text-3 h2 {
+    width: 388.36px;
+    height: 125px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.body-main-container .flyer-three .text-3 h2 span {
+    color: #000000;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.body-main-container .flyer-three .text-3 span {
+    width: 488.53px;
+    height: 103px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.body-main-container .flyer-three .text-3 button {
+    background-color: rgb(143, 139, 244);
+    border-color: rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.body-main-container .flyer-four .text-4 {
+    background-color: rgb(241, 255, 103);
+}
+
+.body-main-container .flyer-four .text-4 h1 span {
+    width: 511.69px;
+    color: rgb(30, 57, 50);
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.body-main-container .flyer-four .text-4 span {
+    width: 511.69px;
+    color: #1e3932;
+    font-size: 24px;
+    text-align: center;
+}
+
+.body-main-container .flyer-four .text-4 button {
+    background-color: rgb(241, 255, 103);
+    border-color: rgb(30, 57, 50);
+    color: rgb(30, 57, 50);
+}
+
+.announcements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+}
+
+.announcements div {
+    width: 742.14px;
+    height: 75.56;
+    padding: 32px 0px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25.2px;
+    font-weight: 500;
+}
+
+footer {
+    padding: 24px 0px;
+}
+
+footer .main-container-foot {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .main-container-foot nav, .icons-container{
+    display: flex;
+    padding: 0px 40px;
+}
+
+footer .main-container-foot nav div {
+    width: 190.388px;
+    margin-left: 32px;
+}
+
+footer .main-container-foot nav .column-1 {
+    margin-left: 0px;
+}
+
+footer .main-container-foot nav h2 {
+    font-size: 19px;
+    font-weight: 400px;
+}
+
+footer .main-container-foot nav li {
+    list-style-type: none;
+    padding: 8px 0px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.58);
+}
+
+footer .main-container-foot nav li:hover {
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+
+footer .main-container-foot nav ul {
+    padding: 0%;
+}
+
+footer #line-footer {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+footer .icons-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer .icons-container .icons {
+    display: flex;
+}
+
+footer .icons-container .icons div {
+    height: 51px;
+    width: 44px;
+    margin-right: 4px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icons-container .icons div i {
+    font-size: 32px;
+    position: absolute;
+}
+
+footer .icons-container .icons div div {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transform: scale(.6);
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer .icons-container .icons div div:hover {
+    transform: scale(1);
+    transform-origin: center;
+    transition: all .2s ease-out;
+    opacity: .1;
+    background-color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+
+footer .compliance-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer .compliance {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    display: flex;
+    padding: 0%;
+    list-style-type: none;
+}
+
+footer .compliance li {
+    font-size: 16px;
+}
+
+footer .compliance li span {
+    padding: 0px 8px;
+    font-size: 16px;
+}
+
+footer .compliance li a {
+    padding: 0px 16px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer .compliance li a:hover {
+    text-decoration: underline;
+}
+
+footer .compliance li .excep-pad {
+    padding-left: 0px;
+}
+
+footer p {
+    width: 95%;
+    padding: 16px 0px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.58);
+}
