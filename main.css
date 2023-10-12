@@ -1,55 +1,50 @@
-main {
-    height: 5px;
-    /* box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07); */
-}
-
-
-.body-main-container {
-    /* position: relative; */
-    /* width: 1425px; */
-    width: 100%;
-    /* height: 3392px; */
-    margin: 0 auto;
+body {
+    box-sizing: border-box;
 }
 
 .body-main-container .flyer-one,
-.flyer-two,
-.flyer-three,
-.flyer-four {
+.body-main-container .flyer-two,
+.body-main-container .flyer-three,
+.body-main-container .flyer-four {
     display: flex;
-    /* width: 1425px; */
-    width: 100%;
-    height: 621.48px;
-    /* height: 618.48px; */
-    margin: 32px 0;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 950px) {
+    .body-main-container .flyer-one,
+    .body-main-container .flyer-two,
+    .body-main-container .flyer-three,
+    .body-main-container .flyer-four {
+      flex-direction: column;
+    }
+  }
+
+.body-main-container .flyer-one .text-1,
+.body-main-container .flyer-two .text-2,
+.body-main-container .flyer-three .text-3,
+.body-main-container .flyer-four .text-4,
+.body-main-container .image-1,
+.body-main-container .image-2,
+.body-main-container .image-3,
+.body-main-container .image-4{
+    flex: 50%;
 }
 
 .body-main-container .flyer-one .text-1,
-.image-1,
-.flyer-two .image-2,
-.text-2,
-.flyer-three .text-3,
-.image-3,
-.flyer-four .image-4,
-.text-4 {
-    height: 100%;
-    /* width: 712.5px; */
-    width: 50%;
-}
-
-.body-main-container .flyer-one .text-1,
-.flyer-two .text-2,
-.flyer-three .text-3,
-.flyer-four .text-4 {
-    /* background-color: #eb81a5; */
-    /* width: 616.500px; */
-    width: 50%;
-    height: 621.484px;
-    /* padding: 32px 48px; */
+.body-main-container .flyer-two .text-2,
+.body-main-container .flyer-three .text-3,
+.body-main-container .flyer-four .text-4{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.body-main-container h2, span {
+    max-width: 83%;
+    text-align: center;
 }
 
 .body-main-container .flyer-one .text-1 button,
@@ -67,6 +62,8 @@ main {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration-line: none;
     font-size: 16px;
+    max-width: 25%;
+    background-color:transparent;
 }
 
 .body-main-container .flyer-one .text-1 button:hover,
@@ -79,34 +76,34 @@ main {
 
 .body-main-container .flyer-one .text-1 {
     background-color: rgb(235, 129, 165);
-    margin-bottom: 24px;
-}
-
-.body-main-container .flyer-one .text-1 h1,
-.body-main-container.flyer-one span {
     color: #1e3932;
-    font-size: 50px;
-    letter-spacing: 2px;
-    width: 511.688px;
-    height: 120px;
-    text-align: center;
 }
-
-.body-main-container .flyer-one .text-1 #intro {
-    width: 511.688px;
-    /* max-width: calc(1em * (calc(600 / 13))); */
-    height: 144px;
-    color: #1e3932;
-    font-size: 25px;
-    text-align: center;
-    line-height: 36px;
-    font-weight: 400px;
+.body-main-container .flyer-two .text-2 {
+    background-color: rgb(0, 98, 65);
+    color: #ffffff;
 }
-
-.body-main-container .flyer-one .text-1 button {
+.body-main-container .flyer-three .text-3 {
+    background-color: rgb(143, 139, 244);
     color: rgb(30, 57, 50);
-    border-color: rgb(30, 57, 50);
-    background-color: rgb(235, 129, 165);
+}
+.body-main-container .flyer-four .text-4 {
+    background-color: rgb(241, 255, 103);
+    color: rgb(30, 57, 50);
+}
+
+.body-main-container h1, span{
+    letter-spacing: 2px;
+    line-height: 36px;
+}
+
+.body-main-container span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.body-main-container h1 {
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .body-main-container .flyer-one .image-1 img,
@@ -117,98 +114,6 @@ main {
     width: 100%;
 }
 
-.body-main-container .flyer-two .text-2 {
-    background-color: rgb(0, 98, 65);
-    color: #ffffff;
-    text-align: center;
-}
-
-.body-main-container .flyer-two .text-2 h2 {
-    width: 472.75px;
-    height: 120px;
-}
-
-.body-main-container .flyer-two .text-2 h2 span {
-    font-size: 50px;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
-.body-main-container .flyer-two .text-2 span {
-    width: 506.67px;
-    height: 72px;
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.body-main-container .flyer-two .text-2 button {
-    background-color: rgb(0, 98, 65);
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
-
-.body-main-container .flyer-three .text-3 {
-    background-color: rgb(143, 139, 244);
-}
-
-.body-main-container .flyer-three .text-3 h2 {
-    width: 388.36px;
-    height: 125px;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.body-main-container .flyer-three .text-3 h2 span {
-    color: #000000;
-    font-size: 50px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.body-main-container .flyer-three .text-3 span {
-    width: 488.53px;
-    height: 103px;
-    font-size: 24px;
-    text-align: center;
-    line-height: 36px;
-}
-
-.body-main-container .flyer-three .text-3 button {
-    background-color: rgb(143, 139, 244);
-    border-color: rgba(0, 0, 0, 0.87);
-    color: rgba(0, 0, 0, 0.87);
-}
-
-.body-main-container .flyer-four .text-4 {
-    background-color: rgb(241, 255, 103);
-}
-
-.body-main-container .flyer-four .text-4 h1 span {
-    width: 511.69px;
-    color: rgb(30, 57, 50);
-    font-size: 50px;
-    letter-spacing: 2px;
-    line-height: 60px;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.body-main-container .flyer-four .text-4 span {
-    width: 511.69px;
-    color: #1e3932;
-    font-size: 24px;
-    text-align: center;
-}
-
-.body-main-container .flyer-four .text-4 button {
-    background-color: rgb(241, 255, 103);
-    border-color: rgb(30, 57, 50);
-    color: rgb(30, 57, 50);
-}
-
 .announcements {
     display: flex;
     align-items: center;
@@ -217,13 +122,13 @@ main {
 }
 
 .announcements div {
-    width: 742.14px;
     height: 75.56;
     padding: 32px 0px;
     text-align: center;
     font-size: 15px;
     line-height: 25.2px;
     font-weight: 500;
+    max-width: 83%;
 }
 
 footer {
@@ -235,13 +140,14 @@ footer .main-container-foot {
     margin: 0 auto;
 }
 
-footer .main-container-foot nav, .icons-container{
+footer .main-container-foot nav,
+.icons-container {
     display: flex;
     padding: 0px 40px;
 }
 
 footer .main-container-foot nav div {
-    width: 190.388px;
+
     margin-left: 32px;
 }
 
